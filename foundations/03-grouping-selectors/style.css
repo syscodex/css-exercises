@@ -1,0 +1,41 @@
+.click, .click2 {
+    
+    font-size:50px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.click {
+    background-color: black;
+    color:aquamarine;
+}
+
+.click2 {
+        background-color: yellow;
+        color:black;
+}
+
+.message {
+    display: none; /* hide the message by default */
+  }
+
+.click:focus ~ .message {
+    
+    display: block; /* show the message when btn1 is clicked */
+  }
+  
+.click2:focus ~ .message::before {
+    
+    display: block;
+    
+  }
+  .message::before {
+    content: "Hello, World";
+    font-size: 300px;
+    font-weight: bold;
+    color:bisque;
+    margin:100px auto;
+
+  }
+
+
+
